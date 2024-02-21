@@ -20,7 +20,7 @@ In order to build the plugin yourself you have to
 3. copy the `interop` folder into the project
 4. run `dotnet build -c Release` inside the folder (or open the .csproj with Visual Studio)
 
-The `FastPickup.dll` should now be in `bin/Release/net6.0`.
+The `SeeAllItems.dll` should now be in `bin/Release/net6.0`.
 
 You'll have to have .Net 6.0 or higher installed.
 

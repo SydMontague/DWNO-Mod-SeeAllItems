@@ -60,6 +60,9 @@ namespace SeeAllItems
             List<PartnerCtrl.ItemPickPointsRadar> toRemove = new List<PartnerCtrl.ItemPickPointsRadar>();
             foreach (var entry in __instance.m_ItemPickPointsRadar)
             {
+                if (entry == null || entry.m_ItemPickPoint == null || entry.m_ItemPickPoint.gameObject == null)
+                    continue;
+
                 var itemPosition = entry.m_ItemPickPoint.gameObject.transform.position;
                 var distance = Vector3.Distance(itemPosition, pos);
                 if (distance > Plugin.Instance.itemRadarDistance.Value)
